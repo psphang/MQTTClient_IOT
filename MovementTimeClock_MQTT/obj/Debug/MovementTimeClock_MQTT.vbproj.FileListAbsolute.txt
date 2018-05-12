@@ -1,0 +1,15 @@
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\bin\Debug\MovementTimeClock.exe.config
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\bin\Debug\MovementTimeClock.exe
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\bin\Debug\MovementTimeClock.pdb
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\bin\Debug\MovementTimeClock.xml
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\bin\Debug\M2Mqtt.Net.dll
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\bin\Debug\M2Mqtt.Net.pdb
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\obj\Debug\MovementTimeClock_MQTT.vbprojResolveAssemblyReference.cache
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\obj\Debug\MovementTimeClock.Form1.resources
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\obj\Debug\MovementTimeClock.Resources.resources
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\obj\Debug\MovementTimeClock_MQTT.vbproj.GenerateResource.Cache
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\obj\Debug\MovementTimeClock.exe
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\obj\Debug\MovementTimeClock.xml
+C:\Users\Phang\Documents\GitHub\MQTTClient_IOT\MovementTimeClock_MQTT\obj\Debug\MovementTimeClock.pdb

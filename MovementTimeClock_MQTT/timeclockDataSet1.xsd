@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="timeclockDataSet" targetNamespace="http://tempuri.org/timeclockDataSet1.xsd" xmlns:mstns="http://tempuri.org/timeclockDataSet1.xsd" xmlns="http://tempuri.org/timeclockDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="timeclockConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="timeclockConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MovementTimeClock.My.MySettings.GlobalReference.Default.timeclockConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="auditTableAdapter" GeneratorDataComponentClassName="auditTableAdapter" Name="audit" UserDataComponentName="auditTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="timeclockConnectionString (MySettings)" DbObjectName="timeclock.audit" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT modified_by_ip, modified_by_user, modified_when, modified_from, modified_to, modified_why, user_modified FROM audit</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dbversionTableAdapter" GeneratorDataComponentClassName="dbversionTableAdapter" Name="dbversion" UserDataComponentName="dbversionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="timeclockConnectionString (MySettings)" DbObjectName="timeclock.dbversion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT dbversion FROM dbversion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="employeesTableAdapter" GeneratorDataComponentClassName="employeesTableAdapter" Name="employees" UserDataComponentName="employeesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="timeclockConnectionString (MySettings)" DbObjectName="timeclock.employees" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT empfullname, tstamp, employee_passwd, displayname, email, groups, office, admin, reports, time_admin, disabled FROM employees</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="groupsTableAdapter" GeneratorDataComponentClassName="groupsTableAdapter" Name="groups" UserDataComponentName="groupsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="timeclockConnectionString (MySettings)" DbObjectName="timeclock.groups" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT groupname, groupid, officeid FROM groups</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="officesTableAdapter" GeneratorDataComponentClassName="officesTableAdapter" Name="offices" UserDataComponentName="officesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="timeclockConnectionString (MySettings)" DbObjectName="timeclock.offices" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT officename, officeid FROM offices</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="punchlistTableAdapter" GeneratorDataComponentClassName="punchlistTableAdapter" Name="punchlist" UserDataComponentName="punchlistTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="timeclockConnectionString (MySettings)" DbObjectName="timeclock.punchlist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT punchitems, color, in_or_out FROM punchlist</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="timeclockDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="timeclockDataSet" msprop:Generator_UserDSName="timeclockDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="audit" msprop:Generator_TableClassName="auditDataTable" msprop:Generator_TableVarName="tableaudit" msprop:Generator_TablePropName="audit" msprop:Generator_RowDeletingName="auditRowDeleting" msprop:Generator_RowChangingName="auditRowChanging" msprop:Generator_RowEvHandlerName="auditRowChangeEventHandler" msprop:Generator_RowDeletedName="auditRowDeleted" msprop:Generator_UserTableName="audit" msprop:Generator_RowChangedName="auditRowChanged" msprop:Generator_RowEvArgName="auditRowChangeEvent" msprop:Generator_RowClassName="auditRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dbversion" msprop:Generator_TableClassName="dbversionDataTable" msprop:Generator_TableVarName="tabledbversion" msprop:Generator_TablePropName="dbversion" msprop:Generator_RowDeletingName="dbversionRowDeleting" msprop:Generator_RowChangingName="dbversionRowChanging" msprop:Generator_RowEvHandlerName="dbversionRowChangeEventHandler" msprop:Generator_RowDeletedName="dbversionRowDeleted" msprop:Generator_UserTableName="dbversion" msprop:Generator_RowChangedName="dbversionRowChanged" msprop:Generator_RowEvArgName="dbversionRowChangeEvent" msprop:Generator_RowClassName="dbversionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="employees" msprop:Generator_TableClassName="employeesDataTable" msprop:Generator_TableVarName="tableemployees" msprop:Generator_TablePropName="employees" msprop:Generator_RowDeletingName="employeesRowDeleting" msprop:Generator_RowChangingName="employeesRowChanging" msprop:Generator_RowEvHandlerName="employeesRowChangeEventHandler" msprop:Generator_RowDeletedName="employeesRowDeleted" msprop:Generator_UserTableName="employees" msprop:Generator_RowChangedName="employeesRowChanged" msprop:Generator_RowEvArgName="employeesRowChangeEvent" msprop:Generator_RowClassName="employeesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="groups" msprop:Generator_TableClassName="groupsDataTable" msprop:Generator_TableVarName="tablegroups" msprop:Generator_TablePropName="groups" msprop:Generator_RowDeletingName="groupsRowDeleting" msprop:Generator_RowChangingName="groupsRowChanging" msprop:Generator_RowEvHandlerName="groupsRowChangeEventHandler" msprop:Generator_RowDeletedName="groupsRowDeleted" msprop:Generator_UserTableName="groups" msprop:Generator_RowChangedName="groupsRowChanged" msprop:Generator_RowEvArgName="groupsRowChangeEvent" msprop:Generator_RowClassName="groupsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="info">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="metars">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="offices" msprop:Generator_TableClassName="officesDataTable" msprop:Generator_TableVarName="tableoffices" msprop:Generator_TablePropName="offices" msprop:Generator_RowDeletingName="officesRowDeleting" msprop:Generator_RowChangingName="officesRowChanging" msprop:Generator_RowEvHandlerName="officesRowChangeEventHandler" msprop:Generator_RowDeletedName="officesRowDeleted" msprop:Generator_UserTableName="offices" msprop:Generator_RowChangedName="officesRowChanged" msprop:Generator_RowEvArgName="officesRowChangeEvent" msprop:Generator_RowClassName="officesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="punchlist" msprop:Generator_TableClassName="punchlistDataTable" msprop:Generator_TableVarName="tablepunchlist" msprop:Generator_TablePropName="punchlist" msprop:Generator_RowDeletingName="punchlistRowDeleting" msprop:Generator_RowChangingName="punchlistRowChanging" msprop:Generator_RowEvHandlerName="punchlistRowChangeEventHandler" msprop:Generator_RowDeletedName="punchlistRowDeleted" msprop:Generator_UserTableName="punchlist" msprop:Generator_RowChangedName="punchlistRowChanged" msprop:Generator_RowEvArgName="punchlistRowChangeEvent" msprop:Generator_RowClassName="punchlistRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
